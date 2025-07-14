@@ -1,0 +1,6 @@
+# Database configuration
+/model/config.php
+
+# Log and password files
+*.log
+*.env
