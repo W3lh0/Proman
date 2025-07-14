@@ -75,9 +75,9 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 1759.9089910692528,
-			"y": 188.8406529625754,
-			"lastActivityTimestamp": 1752311542556,
+			"x": 1663.6880078609124,
+			"y": 648.2627225028934,
+			"lastActivityTimestamp": 1752485620483,
 			"meta": {}
 		},
 		{
@@ -344,9 +344,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -320.98354980639397,
-			"y": -49.094038414577966,
-			"z": 1.2066035352674649,
+			"x": -66.67543461872503,
+			"y": 12.356051911169004,
+			"z": 1,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -492,9 +492,7 @@
 		{
 			"editingShapeId": null,
 			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:XStXRXbnqYS7ecAWbkYpR"
-			],
+			"selectedShapeIds": [],
 			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
@@ -1149,13 +1147,7 @@
 		{
 			"followingUserId": null,
 			"opacityForNextShape": 1,
-			"stylesForNextShape": {
-				"tldraw:fill": "solid",
-				"tldraw:geo": "rectangle",
-				"tldraw:color": "blue",
-				"tldraw:size": "s",
-				"tldraw:horizontalAlign": "start"
-			},
+			"stylesForNextShape": {},
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
@@ -1170,7 +1162,7 @@
 				"x": 0,
 				"y": 0,
 				"w": 1975.2000732421875,
-				"h": 1126.800048828125
+				"h": 936.0000610351562
 			},
 			"insets": [
 				false,
