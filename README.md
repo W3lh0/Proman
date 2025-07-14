@@ -26,6 +26,10 @@ Follow these steps to use PROMAN on local development enviroment
 * MariaDB/MySQL
 * Web-host with PHP
 * Git
+* Tldraw
+
+### Diagrams
+To open diagrams related to project you need Tldraw extension.
 
 ### Step-By-Step
 
