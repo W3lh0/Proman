@@ -184,7 +184,7 @@
 											"content": [
 												{
 													"type": "text",
-													"text": "Search project by title - As a user, I want to search for projects by title, so I can efficiently find and view projects that meet my criteria."
+													"text": "Search project - As a user, I want to search for projects by title, so I can efficiently find and view projects that meet my criteria."
 												}
 											]
 										}
@@ -309,7 +309,46 @@
 											"content": [
 												{
 													"type": "text",
+													"text": "Search task - As a user, I want to search for task by title, so I can efficiently find and view tasks that meet my criteria."
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "listItem",
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
 													"text": "Attach image files to tasks - As a user, I want to attach image files to tasks, so I can add visualization of tasks internal structures or dependencies."
+												}
+											]
+										},
+										{
+											"type": "bulletList",
+											"content": [
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"text": "Search image - AS a user, I want to search for images by title, so I can efficiently find and view images that meet my criteria."
+																}
+															]
+														}
+													]
 												}
 											]
 										}
@@ -331,10 +370,26 @@
 											]
 										},
 										{
-											"type": "paragraph",
-											"attrs": {
-												"dir": "auto"
-											}
+											"type": "bulletList",
+											"content": [
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"text": "Search Comment - Ad a user, I want to search for comment by title, so I can efficiently find and view comments that meet my criteria."
+																}
+															]
+														}
+													]
+												}
+											]
 										}
 									]
 								}
@@ -623,6 +678,12 @@
 							"type": "paragraph",
 							"attrs": {
 								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
 							},
 							"content": [
 								{
@@ -641,9 +702,9 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 630.3999633789062,
-			"y": 416.07485538330076,
-			"lastActivityTimestamp": 1752394874819,
+			"x": 1320.0176422885745,
+			"y": 317.50925179805483,
+			"lastActivityTimestamp": 1752661669920,
 			"meta": {}
 		},
 		{
@@ -664,7 +725,7 @@
 				"x": 0,
 				"y": 0,
 				"w": 1975.2000732421875,
-				"h": 1126.800048828125
+				"h": 936.0000610351562
 			},
 			"insets": [
 				false,
@@ -707,9 +768,9 @@
 			"typeName": "instance_page_state"
 		},
 		{
-			"x": 77.41253662109375,
-			"y": 143.743931237793,
-			"z": 1,
+			"x": 218.46327851469096,
+			"y": 115.18450949901992,
+			"z": 0.8750271168206515,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
