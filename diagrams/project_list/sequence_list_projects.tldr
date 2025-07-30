@@ -109,9 +109,9 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 335.91328617897494,
-			"y": 733.5927962590447,
-			"lastActivityTimestamp": 1752491825593,
+			"x": 705.8273064939654,
+			"y": 162.2269115666716,
+			"lastActivityTimestamp": 1753869026853,
 			"meta": {}
 		},
 		{
@@ -316,9 +316,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -95.8103387273604,
-			"y": -411.3069457639141,
-			"z": 1.4893611673616753,
+			"x": 137.27499952521066,
+			"y": 4.1537730258355055,
+			"z": 1.1,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -878,12 +878,12 @@
 			"typeName": "shape"
 		},
 		{
-			"editingShapeId": null,
+			"editingShapeId": "shape:iZ4doYJhFjLHHOF1cox-3",
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:NnysGQwrZc3QU_M8WxjAn"
+				"shape:iZ4doYJhFjLHHOF1cox-3"
 			],
-			"hoveredShapeId": "shape:NnysGQwrZc3QU_M8WxjAn",
+			"hoveredShapeId": "shape:OpIjeXJC-VOIvEP4KVeVO",
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -1976,17 +1976,11 @@
 		{
 			"followingUserId": null,
 			"opacityForNextShape": 1,
-			"stylesForNextShape": {
-				"tldraw:geo": "rectangle",
-				"tldraw:color": "black",
-				"tldraw:fill": "pattern",
-				"tldraw:dash": "solid",
-				"tldraw:textAlign": "middle"
-			},
+			"stylesForNextShape": {},
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
-				"type": "grabbing",
+				"type": "default",
 				"rotation": 0
 			},
 			"isFocusMode": false,
@@ -1997,7 +1991,7 @@
 				"x": 0,
 				"y": 0,
 				"w": 1975.2000732421875,
-				"h": 936.0000610351562
+				"h": 914.4000244140625
 			},
 			"insets": [
 				false,
@@ -2234,7 +2228,7 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 464.05017544956814,
+			"x": 450.9781568240591,
 			"y": 129.14690050298788,
 			"rotation": 0,
 			"isLocked": false,
@@ -2245,7 +2239,7 @@
 			"props": {
 				"color": "black",
 				"size": "m",
-				"w": 41.98081937221114,
+				"w": 68.1248566232292,
 				"font": "draw",
 				"textAlign": "middle",
 				"autoSize": true,
@@ -2261,7 +2255,7 @@
 							"content": [
 								{
 									"type": "text",
-									"text": "Web"
+									"text": "Router"
 								}
 							]
 						}

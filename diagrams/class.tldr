@@ -50,9 +50,9 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 1528.4975267375312,
-			"y": -126.29096555162278,
-			"lastActivityTimestamp": 1753794185490,
+			"x": -2971.8720703225617,
+			"y": 1817.5011414994406,
+			"lastActivityTimestamp": 1753866733519,
 			"meta": {}
 		},
 		{
@@ -838,9 +838,9 @@
 			"typeName": "binding"
 		},
 		{
-			"x": 5911.859353053643,
-			"y": 788.6291802168778,
-			"z": 0.2418986953379617,
+			"x": 4260.874610511947,
+			"y": -1299.7745711217676,
+			"z": 0.7903786199509264,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -1533,6 +1533,24 @@
 			"typeName": "shape"
 		},
 		{
+			"meta": {},
+			"id": "binding:DWpmJRiJ3nSVOwhKe99GB",
+			"type": "arrow",
+			"fromId": "shape:ZWDJlLC2Mnfvvjknb6ZjH",
+			"toId": "shape:j2tw0iDS6bNsDHkyZMuCF",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 1,
+					"y": 0.5
+				},
+				"snap": "edge-point",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
 			"x": 0,
 			"y": 87.04550773339389,
 			"rotation": 0,
@@ -1778,14 +1796,12 @@
 			"editingShapeId": null,
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:52tj8BD9S7WaIhlwPMXf6",
-				"shape:-8XbazcKFeCZJFpfo2gft",
-				"shape:FTJZahvCezTOuFqLXGCR8"
+				"shape:ZWDJlLC2Mnfvvjknb6ZjH"
 			],
-			"hoveredShapeId": "shape:wyfeUa9HCtE79t19tDGSx",
+			"hoveredShapeId": "shape:ZWDJlLC2Mnfvvjknb6ZjH",
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
-			"focusedGroupId": "shape:f2q9sNOFZ4hwqKq1Q1dBa",
+			"focusedGroupId": null,
 			"meta": {},
 			"id": "instance_page_state:page:page",
 			"pageId": "page:page",
@@ -2631,8 +2647,8 @@
 					"y": 0
 				},
 				"end": {
-					"x": -3978.7994384780663,
-					"y": 1017.1566420763343
+					"x": -4043.847346263236,
+					"y": 1011.8190103470474
 				},
 				"arrowheadStart": "none",
 				"arrowheadEnd": "arrow",
@@ -4674,17 +4690,11 @@
 		{
 			"followingUserId": null,
 			"opacityForNextShape": 1,
-			"stylesForNextShape": {
-				"tldraw:geo": "rectangle",
-				"tldraw:fill": "solid",
-				"tldraw:dash": "dashed",
-				"tldraw:arrowKind": "elbow",
-				"tldraw:color": "black"
-			},
+			"stylesForNextShape": {},
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
-				"type": "default",
+				"type": "grabbing",
 				"rotation": 0
 			},
 			"isFocusMode": false,
@@ -4695,7 +4705,7 @@
 				"x": 0,
 				"y": 0,
 				"w": 1975.2000732421875,
-				"h": 936.0000610351562
+				"h": 914.4000244140625
 			},
 			"insets": [
 				false,
@@ -4712,9 +4722,9 @@
 			"isFocused": true,
 			"devicePixelRatio": 0.8333333134651184,
 			"isCoarsePointer": false,
-			"isHoveringCanvas": false,
+			"isHoveringCanvas": true,
 			"openMenus": [],
-			"isChangingStyle": true,
+			"isChangingStyle": false,
 			"isReadonly": false,
 			"meta": {},
 			"duplicateProps": null,
