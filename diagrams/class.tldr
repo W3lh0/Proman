@@ -50,9 +50,9 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": -3340.6684415215523,
-			"y": -106.26779823254924,
-			"lastActivityTimestamp": 1753870090405,
+			"x": -788.1845386202649,
+			"y": 1287.414644565509,
+			"lastActivityTimestamp": 1753946355089,
 			"meta": {}
 		},
 		{
@@ -198,8 +198,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 1067.7446851714433,
-			"y": -340.67122910455737,
+			"x": 345.31850578366743,
+			"y": -364.0025668441838,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -350,8 +350,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 1103.7035607654839,
-			"y": 706.7540569803159,
+			"x": 381.277381377708,
+			"y": 683.4227192406895,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -471,8 +471,26 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 1498.2866395499855,
-			"y": 1106.181849742652,
+			"meta": {},
+			"id": "binding:gltKWWXhRz_-fLp6leCzw",
+			"type": "arrow",
+			"fromId": "shape:ZWDJlLC2Mnfvvjknb6ZjH",
+			"toId": "shape:j2tw0iDS6bNsDHkyZMuCF",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 1,
+					"y": 0.5
+				},
+				"snap": "edge-point",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": 775.8604601622096,
+			"y": 1082.8505120030256,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -838,16 +856,16 @@
 			"typeName": "binding"
 		},
 		{
-			"x": 4511.275682805982,
-			"y": 542.4730416817462,
-			"z": 0.9738535349816849,
+			"x": 5340.378852611047,
+			"y": 939.1509604275268,
+			"z": 0.2543828141169162,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
 		},
 		{
-			"x": 1509.544223776907,
-			"y": 1318.3730039741986,
+			"x": 787.1180443891312,
+			"y": 1295.0416662345722,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1533,24 +1551,6 @@
 			"typeName": "shape"
 		},
 		{
-			"meta": {},
-			"id": "binding:DWpmJRiJ3nSVOwhKe99GB",
-			"type": "arrow",
-			"fromId": "shape:ZWDJlLC2Mnfvvjknb6ZjH",
-			"toId": "shape:j2tw0iDS6bNsDHkyZMuCF",
-			"props": {
-				"isPrecise": true,
-				"isExact": false,
-				"normalizedAnchor": {
-					"x": 1,
-					"y": 0.5
-				},
-				"snap": "edge-point",
-				"terminal": "end"
-			},
-			"typeName": "binding"
-		},
-		{
 			"x": 0,
 			"y": 87.04550773339389,
 			"rotation": 0,
@@ -1793,15 +1793,15 @@
 			"typeName": "shape"
 		},
 		{
-			"editingShapeId": "shape:-8XbazcKFeCZJFpfo2gft",
+			"editingShapeId": null,
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:-8XbazcKFeCZJFpfo2gft"
+				"shape:ZWDJlLC2Mnfvvjknb6ZjH"
 			],
-			"hoveredShapeId": "shape:IbsoyysuvWVd35jW9dyKj",
+			"hoveredShapeId": "shape:ZWDJlLC2Mnfvvjknb6ZjH",
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
-			"focusedGroupId": "shape:f2q9sNOFZ4hwqKq1Q1dBa",
+			"focusedGroupId": null,
 			"meta": {},
 			"id": "instance_page_state:page:page",
 			"pageId": "page:page",
@@ -1915,8 +1915,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 1863.1918518945758,
-			"y": 601.736951666025,
+			"x": 1140.7656725068,
+			"y": 578.4056139263986,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -2107,8 +2107,8 @@
 			"typeName": "binding"
 		},
 		{
-			"x": 1606.0197392289256,
-			"y": 808.2209348387228,
+			"x": 883.5935598411497,
+			"y": 784.8895970990964,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -2248,8 +2248,8 @@
 			"typeName": "binding"
 		},
 		{
-			"x": 414.5436868126425,
-			"y": 924.3104778451061,
+			"x": -307.88249257513337,
+			"y": 900.9791401054797,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -2426,8 +2426,8 @@
 			"typeName": "binding"
 		},
 		{
-			"x": 1943.5723249292314,
-			"y": 1492.5060039870214,
+			"x": 1221.1461455414556,
+			"y": 1469.174666247395,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -2625,8 +2625,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 1087.0046658299934,
-			"y": 806.49399894468,
+			"x": 364.5784864422176,
+			"y": 783.1626612050536,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -2635,7 +2635,7 @@
 			"type": "arrow",
 			"props": {
 				"kind": "elbow",
-				"elbowMidPoint": 0.5,
+				"elbowMidPoint": 0.34587163494658985,
 				"dash": "dashed",
 				"size": "m",
 				"fill": "solid",
@@ -2647,8 +2647,8 @@
 					"y": 0
 				},
 				"end": {
-					"x": -4043.847346263236,
-					"y": 1011.8190103470474
+					"x": -3320.6462644181365,
+					"y": 1038.7616482580734
 				},
 				"arrowheadStart": "none",
 				"arrowheadEnd": "arrow",
@@ -2696,8 +2696,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 555.2095863433815,
-			"y": 1372.088660665466,
+			"x": -167.21659304439436,
+			"y": 1348.7573229258396,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -3284,8 +3284,8 @@
 			"typeName": "binding"
 		},
 		{
-			"x": 4.456011927126838,
-			"y": 593.513832333768,
+			"x": -717.970167460649,
+			"y": 570.1824945941416,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -3321,8 +3321,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 581.2271571340152,
-			"y": 1271.5126080389955,
+			"x": -141.19902225376063,
+			"y": 1248.181270299369,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -4115,8 +4115,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 595.4903780025306,
-			"y": 1744.264170827407,
+			"x": -126.93580138524521,
+			"y": 1720.9328330877806,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -4267,8 +4267,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 322.14115208866633,
-			"y": 1673.660129001547,
+			"x": -400.2850272991095,
+			"y": 1650.3287912619205,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -4359,8 +4359,8 @@
 			"typeName": "binding"
 		},
 		{
-			"x": 631.4516207645165,
-			"y": 1093.7542961893041,
+			"x": -90.97455862325933,
+			"y": 1070.4229584496777,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -4694,7 +4694,7 @@
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
-				"type": "default",
+				"type": "grabbing",
 				"rotation": 0
 			},
 			"isFocusMode": false,
@@ -4704,8 +4704,8 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 2016.0001220703125,
-				"h": 1090.800048828125
+				"w": 1975.2000732421875,
+				"h": 914.4000244140625
 			},
 			"insets": [
 				false,
@@ -4887,8 +4887,8 @@
 			"typeName": "binding"
 		},
 		{
-			"x": -856.0502519687825,
-			"y": 7.351402751510591,
+			"x": -1578.4764313565584,
+			"y": -15.979934988115815,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -5229,8 +5229,8 @@
 			"typeName": "binding"
 		},
 		{
-			"x": 1090.7376838894452,
-			"y": 766.9864288253891,
+			"x": 368.31150450166933,
+			"y": 743.6550910857627,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
