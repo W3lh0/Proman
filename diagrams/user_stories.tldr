@@ -24,7 +24,7 @@
 			"com.tldraw.shape.note": 9,
 			"com.tldraw.shape.line": 5,
 			"com.tldraw.shape.frame": 1,
-			"com.tldraw.shape.arrow": 6,
+			"com.tldraw.shape.arrow": 7,
 			"com.tldraw.shape.highlight": 1,
 			"com.tldraw.shape.embed": 4,
 			"com.tldraw.shape.image": 5,
@@ -48,8 +48,8 @@
 			"typeName": "document"
 		},
 		{
-			"x": 90.1875,
-			"y": -42.04391903076174,
+			"x": 88.90481291879496,
+			"y": -41.30754158475776,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -586,7 +586,24 @@
 											"content": [
 												{
 													"type": "text",
-													"text": "Manage profile - As a user, I want to edit my profile, so I can keep my personal information up."
+													"text": "Manage profile - As a user, I want to edit my profile, so I can keep my personal information up to date."
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "listItem",
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "Delete user - As a user, I want to delete my profile, so I can delete my user information to secure my privacy."
 												}
 											]
 										}
@@ -702,9 +719,9 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 1320.0176422885745,
-			"y": 317.50925179805483,
-			"lastActivityTimestamp": 1752661669920,
+			"x": 1125.831803548838,
+			"y": 729.0228355999251,
+			"lastActivityTimestamp": 1754121300678,
 			"meta": {}
 		},
 		{
@@ -725,7 +742,7 @@
 				"x": 0,
 				"y": 0,
 				"w": 1975.2000732421875,
-				"h": 936.0000610351562
+				"h": 914.4000244140625
 			},
 			"insets": [
 				false,
@@ -768,9 +785,9 @@
 			"typeName": "instance_page_state"
 		},
 		{
-			"x": 218.46327851469096,
-			"y": 115.18450949901992,
-			"z": 0.8750271168206515,
+			"x": 341.01536643096233,
+			"y": 123.12632130117014,
+			"z": 0.7893204716180104,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
