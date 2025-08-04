@@ -40,7 +40,7 @@ class UserModel
 
             return $stmt->rowCount() > 0;
         } catch (PDOException $err) {
-            echo('Adding user failed: ' . $err->getMessage());
+            echo 'Adding user failed: ' . $err->getMessage();
             return false;
         }
     }
@@ -71,7 +71,7 @@ class UserModel
             $stmt->execute($params);
             return $stmt->rowCount() > 0;
         } catch (PDOException $err) {
-            echo('Error during user update (ID: $id)' . $err->getMessage());
+            echo 'Error during user update (ID: $id) ' . $err->getMessage() ;
             return false;
         }
     }
@@ -85,7 +85,7 @@ class UserModel
             $stmt->execute([':userId' => $userId]);
             return $stmt->rowCount() > 0;
         } catch (PDOException $err) {
-            echo('Error while tying to delete user: ' . $err->getMessage());
+            echo 'Error while tying to delete user: ' . $err->getMessage();
             return false;
         }
     }
