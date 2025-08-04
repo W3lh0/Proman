@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS comment, image, task, project, user;
 
-CREATE TABLE user (
+CREATE TABLE users (
     id INT(11) AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(100) NOT NULL UNIQUE,
     password VARCHAR(100) NOT NULL,
@@ -8,7 +8,7 @@ CREATE TABLE user (
     updateAt TIMESTAMP NULL ON UPDATE CURRENT_TIMESTAMP
 );
 
-CREATE TABLE project (
+CREATE TABLE projects (
     id INT(11) AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(100) NOT NULL UNIQUE,
     category VARCHAR(100) NOT NULL,
@@ -18,11 +18,11 @@ CREATE TABLE project (
     userId INT(11) NOT NULL,
     CONSTRAINT fk_pro_usr
         FOREIGN KEY (userId)
-        REFERENCES user(id)
+        REFERENCES users(id)
         ON DELETE CASCADE
 );
 
-CREATE TABLE task (
+CREATE TABLE tasks (
     id INT(11) AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(100) NOT NULL UNIQUE,
     taskDate DATETIME NOT NULL,
@@ -33,11 +33,11 @@ CREATE TABLE task (
     projectId INT(11) NOT NULL,
     CONSTRAINT fk_tas_pro
         FOREIGN KEY (projectId)
-        REFERENCES  project(id)
+        REFERENCES  projects(id)
         ON DELETE CASCADE
 );
 
-CREATE TABLE image (
+CREATE TABLE images (
     id INT(11) AUTO_INCREMENT PRIMARY KEY,
     filePath VARCHAR(255) NOT NULL,
     fileName VARCHAR(100) NOT NULL,
@@ -45,11 +45,11 @@ CREATE TABLE image (
     taskId INT(11) NOT NULL,
     CONSTRAINT fk_img_tas
         FOREIGN KEY (taskId)
-        REFERENCES task(id)
+        REFERENCES tasks(id)
         ON DELETE CASCADE 
 );
 
-CREATE TABLE comment (
+CREATE TABLE comments (
     id INT(11) AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(100) NOT NULL,
     comment TEXT NOT NULL,
@@ -59,6 +59,6 @@ CREATE TABLE comment (
     userId INT(11) NOT NULL,
     CONSTRAINT fk_com_tas
         FOREIGN KEY (taskId)
-        REFERENCES task(id)
+        REFERENCES tasks(id)
         ON DELETE CASCADE
 );
