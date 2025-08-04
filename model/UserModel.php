@@ -11,7 +11,7 @@ class UserModel
 
     public function verifyLogin(string $email, string $password): int 
     {
-        $sql = "SELECT id, password_hash FROM user WHERE email = :email LIMIT 1";
+        $sql = "SELECT id, password_hash FROM users WHERE email = :email LIMIT 1";
 
         $stmt = $this->dbconnection->prepare($sql);
         $stmt->execute([':email' => $email]);
@@ -28,7 +28,7 @@ class UserModel
     {
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-        $sql = "INSERT INTO user (email, password_hash) VALUES (:email, :password_hash)";
+        $sql = "INSERT INTO users (email, password_hash) VALUES (:email, :password_hash)";
 
         try {
             $stmt = $this->dbconnection->prepare($sql);
@@ -64,7 +64,7 @@ class UserModel
             return false;
         }
 
-        $sql = 'UPDATE user SET ' . implode(', ', $setClauses) . "WHERE id = :id";
+        $sql = 'UPDATE users SET ' . implode(', ', $setClauses) . "WHERE id = :id";
 
         try {
             $stmt = $this->dbconnection->prepare($sql);
@@ -78,7 +78,7 @@ class UserModel
     
     public function deleteUser(int $userId): bool
     {
-        $sql = 'DELETE FROM user WHERE Id = :userId';
+        $sql = 'DELETE FROM users WHERE Id = :userId';
 
         try {
             $stmt = $this->dbconnection->prepare($sql);
