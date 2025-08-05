@@ -1,5 +1,7 @@
 <?php
 
+namespace core;
+
 class Connection 
 {
     private string $host;
