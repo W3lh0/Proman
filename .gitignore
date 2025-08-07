@@ -1,5 +1,5 @@
 # Database configuration
-/model/config.php
+/models/config.php
 
 # Log and password files
 *.log

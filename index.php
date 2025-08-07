@@ -13,5 +13,17 @@ spl_autoload_register(function ($className) {
 
 use models\Connection;
 use models\UserModel;
+use models\ProjectModel;
 use controllers\UserController;
+use controllers\ProjectController;
+use core\Router;
 
+try {
+    $dbConnection = new Connection($host, $dbName, $userName, $password, $options);
+    $pdo = $dbConnection->getPdo();
+} catch (PDOException $err) {
+    die('Database connection error: ' . $err->getMessage());
+}
+
+$userModel = new UserModel($pdo);
+$router = new Router();
