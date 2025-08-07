@@ -27,7 +27,7 @@ class view {
 
     public function render(): string
     {
-        $filePath = __DIR__ . '/../' . $this->viewPath . '.php';
+        $filePath = __DIR__ . '/render/' . $this->viewPath . '.php';
 
         if (!file_exists($filePath)) {
             throw new \Exception("Can't find '{$filePath}'.");
