@@ -8,14 +8,20 @@ class UserController
 {
     private UserModel $userModel;
 
-    public function __constructor(UserModel $userModel)
+    public function __construct(UserModel $userModel)
     {
         $this->userModel = userModel;
     }
 
     public function login(string $email, string $password): void
     {
+        $user = $this->userModel->verifyLogin($email, $password);
 
+        if ($user) {
+            echo "User login successfull";
+        } else {
+            echo "User login failed";
+        }
     }
 
     public function logout(): void

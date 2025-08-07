@@ -11,7 +11,7 @@ class Router
     private PDO $dbconnection;
     private UserModel $userModel;
 
-    public function __constructor(PDO $dbconnection, UserModel $userModel)
+    public function __construct(PDO $dbconnection, UserModel $userModel)
     {
         $this->db = $dbconnection;
         $this->userModel = $userModel;

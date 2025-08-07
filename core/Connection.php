@@ -11,7 +11,7 @@ class Connection
     private array $options;
     private PDO $dbconnection;
 
-    public function __constructor(string $host, string $dbName, string $userName, string $password, array $options = []) 
+    public function __construct(string $host, string $dbName, string $userName, string $password, array $options = []) 
     {
         $this->host = $host;
         $this->userName = $userName;
