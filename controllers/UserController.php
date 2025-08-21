@@ -10,7 +10,7 @@ class UserController
 
     public function __construct(UserModel $userModel)
     {
-        $this->userModel = userModel;
+        $this->userModel = $userModel;
     }
 
     public function login(string $email, string $password): void
@@ -58,7 +58,7 @@ class UserController
         }
     }
 
-    public function updateProfile(int $userId, string $email, string $password): void
+    public function updateProfile(int $userId, string $email, ?string $password): void
     {
         $hashedPassword = null;
 
@@ -77,7 +77,7 @@ class UserController
 
     public function deleteProfile(int $userId): void
     {
-        $success = $this->userModle->deleteUser($userId);
+        $success = $this->userModel->deleteUser($userId);
 
         if ($success) {
             echo "User deleted successfuly";
