@@ -11,19 +11,23 @@ class UserModel
         $this->dbconnection = $dbConnectionParameter;
     }
 
-    public function verifyLogin(string $email, string $password): int 
+    public function verifyLogin(string $email, string $password): array|false 
     {
         $sql = "SELECT id, password_hash FROM users WHERE email = :email LIMIT 1";
 
-        $stmt = $this->dbconnection->prepare($sql);
-        $stmt->execute([':email' => $email]);
-        $user = $stmt->fetch();
+        try {
+            $stmt = $this->dbconnection->prepare($sql);
+            $stmt->execute([':email' => $email]);
+            $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if ($user && password_verify($password, $user['password_hash'])) {
-            return $user['id'];
+            if ($user && password_verify($password, $user['password_hash'])) {
+                return $user;
+            }
+        } catch (PDOException $err) {
+            echo 'Login verification failed:' . $err->getMessage();
         }
 
-        return 0;
+        return false;
     }
 
     public function addUser(string $email, string $password): bool
