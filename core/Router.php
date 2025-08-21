@@ -4,6 +4,7 @@ namespace core;
 
 use PDO;
 use models\UserModel;
+use controllers\UserController;
 
 class Router
 {
@@ -39,7 +40,7 @@ class Router
 
     public function dispatch(string $requestMethod, string $requestURI): void
     {
-        $route = $this->matchRoutes($requestURI, $requestMethod);
+        $route = $this->matchRoute($requestURI, $requestMethod);
 
         if (!$route) {
             throw new \Exception("Can't find route '{$requestURI}' and method '{$requestMethod}'.");
@@ -77,10 +78,11 @@ class Router
 
     private function createController(string $controllerName): object
     {
-        $fullControllerName = 'controllers\\' - $controllerName;
+        $fullControllerName = 'controllers\\' . $controllerName;
+
         if (!class_exists($fullControllerName)) {
             throw new \Exception("Can't find controller '{$fullControllerName}'.");
         }
-        return new $fullControllerName($this->db, $this->userModel);
+        return new $fullControllerName($this->userModel);
     }
 }
