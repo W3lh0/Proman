@@ -8,8 +8,8 @@ class Connection
     private string $userName;
     private string $password;
     private string $dbName;
-    private array $options;
-    private PDO $dbconnection;
+    private array $options = [];
+    private \PDO $dbconnection;
 
     public function __construct(string $host, string $dbName, string $userName, string $password, array $options = []) 
     {
@@ -17,22 +17,18 @@ class Connection
         $this->userName = $userName;
         $this->password = $password;
         $this->dbName = $dbName;
-        $this->$option = $options;
+        $this->options = $options;
 
-        $dns = "mysql:host{$this->host};dbname{$this->dbName};charset=utf8mb4";
+        $dns = "mysql:host={$this->host};dbname={$this->dbName};charset=utf8mb4";
 
         try {
-            $this->pdo = new PDO($dns, $this->userName, $this->password, $this->options);
-
-            $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $this->pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-
-        } catch (PDOException $err) {
+            $this->dbconnection = new \PDO($dns, $this->userName, $this->password, $this->options);
+        } catch (\PDOException $err) {
             die("Database connection failed: " . $err->getMessage());
         }
     }
 
-    public function getConnection(): PDO
+    public function getConnection(): \PDO
     {
         return $this->dbconnection;
     }

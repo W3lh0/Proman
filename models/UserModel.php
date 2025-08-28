@@ -1,17 +1,17 @@
 <?php
 
-namespace model;
+namespace models;
 
 class UserModel
 {
-    private PDO $dbconnection;
+    private \PDO $dbconnection;
 
-    public function __construct(PDO $dbConnectionParameter)
+    public function __construct(\PDO $dbConnectionParameter)
     {
         $this->dbconnection = $dbConnectionParameter;
     }
 
-    public function verifyLogin(string $email, string $password): array|false 
+    public function verifyLogin(string $email, string $password)
     {
         $sql = "SELECT id, password_hash FROM users WHERE email = :email LIMIT 1";
 
@@ -54,15 +54,16 @@ class UserModel
     public function updateUser(int $userId, array $data): bool
     {
         $setClauses = [];
-        $params = [':id' => $id];
+        $params = [':id' => $userId];
 
         foreach ($data as $key => $value) {
+            $paramKey = ':' . $key;
             if ($key === 'password') {
-                $setClauses[] = 'password_hash = :password_hash';
-                $params[':password_hash'] = password_hash($value, PASSWORD_DEFAULT);
+                $setClauses[] = "password_hash = $paramKey";
+                $params[$paramKey] = password_hash($value, PASSWORD_DEFAULT);
             } else {
-                $setClauses[] = '$key = :$key';
-                $params[':$key'] = $value;
+                $setClauses[] = "$key = :$paramKey";
+                $params[$paramKey] = $value;
             }
         }
 

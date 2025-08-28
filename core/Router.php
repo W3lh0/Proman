@@ -9,12 +9,12 @@ use controllers\UserController;
 class Router
 {
     private array $routes = [];
-    private PDO $dbconnection;
+    private PDO $dbConnection;
     private UserModel $userModel;
 
-    public function __construct(PDO $dbconnection, UserModel $userModel)
+    public function __construct(\PDO $dbConnection, UserModel $userModel)
     {
-        $this->db = $dbconnection;
+        $this->dbConnection = $dbConnection;
         $this->userModel = $userModel;
     }
 

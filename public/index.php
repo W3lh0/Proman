@@ -4,40 +4,36 @@ define('ROOT_PATH', dirname(__DIR__));
 
 session_start();
 
-require_once ROOT_PATH . '/config.php';
+require_once ROOT_PATH . '/models/config.php';
 
 spl_autoload_register(function ($className) {
-    $filePath = ROOT_PATH . DIRECTORY_SEPARATOR . str_replace('\\', DIRECTORY_SEPARATOR, $className) . '.php';
+    $filePath = str_replace('\\', DIRECTORY_SEPARATOR, $className) . '.php';
+    $fullPath = ROOT_PATH . DIRECTORY_SEPARATOR . $filePath;
 
-    if (file_exists($filePath)) {
-        require_once $filePath;
+    echo "yritetään ladata: $filePath<br>";
+
+    if (file_exists($fullPath)) {
+        require_once $fullPath;
     }
 });
 
-use core\Connection;
 use core\Router;
-use models\UserModel;
-use models\ProjectModel;
+use core\Connection;
 use controllers\UserController;
-use controllers\ProjectController;
+use function core\normalizeUri;
 
-try {
-    $dbConnection = (new Connection($host, $dbName, $userName, $password, $options))->getConnection();
-    
-    if (!$dbconnection) {
-        throw new \Exception('Database connection is not available.');
-    }
-} catch (PDOException $err) {
-    die('Database connection error: ' . $err->getMessage());
-}
+require_once ROOT_PATH . '/core/helpers.php';
 
-$userModel = new UserModel($pdo);
+$dbConnection = new Connection($host, $dbName, $userName, $password, $options);
+$pdo = $dbConnection->getConnection();
+$userModel = new \models\UserModel($pdo);
+$userController = new \controllers\UserController($userModel);
 
-$userController = new UserController($userModel);
+$router = new Router($pdo, $userModel);
 
-$router = new Router();
-$router->setControllers($userController);
+require_once ROOT_PATH . '/public/routes.php';
 
-require_once ROOT_PATH . '/core/Routes.php';
+$basePath = '/~e2101506/php/proman/public';
+$normalizedUri = normalizeUri($_SERVER['REQUEST_URI'], $basePath);
 
-$router->dispatch($_SERVER['REQUEST_METHOD'], $_SERVER['REQUIRE_URI']);
+$router->dispatch($_SERVER['REQUEST_METHOD'], $normalizedUri);
