@@ -12,6 +12,6 @@
             <input type="password" id="password" name="password" placeholder="Password" required>
         </div>
         <button type="submit">Login</button>
-        <button type="submit">Signin</button>
+        <button type="submit">Sign in</button>
     </form>
 </div>

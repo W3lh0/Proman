@@ -20,7 +20,7 @@ class UserController
             exit;
         }
 
-        require_once __DIR__ . '/../views/login.php';
+        require_once __DIR__ . '/../views/render/login.php';
     }
 
     public function login(string $email, string $password): void
