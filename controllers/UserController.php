@@ -13,6 +13,16 @@ class UserController
         $this->userModel = $userModel;
     }
 
+    public function showLogin(): void 
+    {
+        if (isset($_SESSION['user_id'])) {
+            header('Location: /dashboard');
+            exit;
+        }
+
+        require_once __DIR__ . '/../views/login.php';
+    }
+
     public function login(string $email, string $password): void
     {
         $user = $this->userModel->verifyLogin($email, $password);
