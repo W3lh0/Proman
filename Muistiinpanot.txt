@@ -1,0 +1,1 @@
+- autetikointi osana index tiedostoa.

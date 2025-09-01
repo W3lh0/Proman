@@ -12,10 +12,9 @@ class Router
     private PDO $dbConnection;
     private UserModel $userModel;
 
-    public function __construct(\PDO $dbConnection, UserModel $userModel)
+    public function __construct(\PDO $dbConnection)
     {
         $this->dbConnection = $dbConnection;
-        $this->userModel = $userModel;
     }
 
     public function get(string $path, string $handler): void
@@ -83,6 +82,6 @@ class Router
         if (!class_exists($fullControllerName)) {
             throw new \Exception("Can't find controller '{$fullControllerName}'.");
         }
-        return new $fullControllerName($this->userModel);
+        return new $fullControllerName($this->dbConnection);
     }
 }

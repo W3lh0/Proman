@@ -17,17 +17,14 @@ spl_autoload_register(function ($className) {
 
 use core\Router;
 use core\Connection;
-use controllers\UserController;
 use function core\normalizeUri;
 
 require_once ROOT_PATH . '/core/helpers.php';
 
 $dbConnection = new Connection($host, $dbName, $userName, $password, $options);
 $pdo = $dbConnection->getConnection();
-$userModel = new \models\UserModel($pdo);
-$userController = new \controllers\UserController($userModel);
 
-$router = new Router($pdo, $userModel);
+$router = new Router($pdo);
 
 require_once ROOT_PATH . '/public/routes.php';
 

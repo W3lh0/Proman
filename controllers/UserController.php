@@ -6,11 +6,13 @@ use models\UserModel;
 
 class UserController
 {
+    private \PDO $dbConnection;
     private UserModel $userModel;
 
-    public function __construct(UserModel $userModel)
+    public function __construct(\PDO $dbConnection)
     {
-        $this->userModel = $userModel;
+        $this->dbConnection = $dbConnection;
+        $this->userModel = new UserModel($this->dbConnection);
     }
 
     public function showLogin(): void 
